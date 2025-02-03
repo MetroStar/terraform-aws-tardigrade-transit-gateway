@@ -154,7 +154,7 @@ locals {
 }
 
 module "ram_share" {
-  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-ram-share.git?ref=4.0.0"
+  source = "git::https://github.com/MetroStar/terraform-aws-tardigrade-ram-share.git?ref=4.0.0"
   providers = {
     aws = aws.owner
   }
@@ -171,7 +171,7 @@ module "ram_share" {
 }
 
 module "ram_share_accepter" {
-  source = "git::https://github.com/plus3it/terraform-aws-tardigrade-ram-share.git//modules/cross_account_principal_association?ref=4.0.0"
+  source = "git::https://github.com/MetroStar/terraform-aws-tardigrade-ram-share.git//modules/cross_account_principal_association?ref=4.0.0"
 
   providers = {
     aws       = aws
